@@ -1,11 +1,14 @@
 const button = document.getElementById("colorButton");
 const historyList = document.getElementById("history");
-const colors = ["#FF5733", "#33FF57", "#3357FF", "#F333FF", "#33FFF3"];
+const initialColors = ["#FF5733", "#33FF57", "#3357FF", "#F333FF", "#33FFF3"];
+let colors = [...initialColors];
 let clickCount = 0;
 const maxClicks = 5;
+// Copy the initial colors array
 
 function getRandomColor() {
-  return colors[Math.floor(Math.random() * colors.length)];
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors.splice(randomIndex, 1)[0];
 }
 
 function changeBackgroundColor() {
