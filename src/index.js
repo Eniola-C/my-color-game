@@ -1,6 +1,18 @@
 const button = document.getElementById("colorButton");
 const historyList = document.getElementById("history");
-const initialColors = ["#FF5733", "#33FF57", "#3357FF", "#F333FF", "#33FFF3"];
+const initialColors = [
+  "#FF5733",
+  "#33FF57",
+  "#3357FF",
+  "#F333FF",
+  "#33FFF3",
+  "#927670",
+  "#00FFD1",
+  "#FF00D9",
+  "#00A2FF",
+  "#FFFF00",
+  "#FF0000",
+];
 let colors = [...initialColors];
 let clickCount = 0;
 const maxClicks = 5;
